@@ -1,7 +1,7 @@
 # News-classification
 Code and datasets for text classification of news articles (language detection, topic identification, web scraping, Streamlit app)
 
-This project was carried out in May/June 2023 as the final project of the Data Science course at WBS Coding School.
+This project was carried out in May/June 2023 as the final project of the Data Science course offered by WBS Coding School.
 
 **Text classification** refers to the categorization of text documents based on their content. In this project, I addressed two text classification problems: language detection and topic identification.
 
@@ -11,4 +11,4 @@ For **language detection**, I trained a multinomial Naive Bayes classifier (usin
 
 Based on the text classification models, I created a **Streamlit app** that detects the language of an input text and classifies it as to the aforementioned categories. Thus, if news articles written in German or English are given as input, the app provides the (main) topic as output. For German and French texts, the app also provides a translation into English (using pre-trained models from Hugging Face).
 
-Finally, I used the topic identification models to analyze two German news platforms with regard to the 
+Finally, I used the Support Vector Machine trained on German to analyze two German news platforms with regard to the number of published articles for each category: tagesschau.de and berliner-kurier.de. For each platform, I created a **web scraper** that extracts the title and text of each article (except weather forecasts). The web scrapers were applied once per day over a period of three days (5-7 June 2023). The extracted articles were then classified regarding the topic categories. A comparison of the results revealed that tagesschau.de published more articles on politics and business whereas berliner-kurier.de published more articles in the remaining topics.
