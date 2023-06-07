@@ -1,2 +1,2 @@
 # News-classification
-Code and datasets for language detection and topic identification of news articles
+Code and datasets for text classification of news articles (language identification, topic classification, web scraping, Streamlit app)
